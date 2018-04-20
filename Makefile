@@ -85,7 +85,7 @@ ASM_OBJECTS = $(patsubst $(SOURCE)%.S,$(BUILD)%.o,$(wildcard $(SOURCE)*.S))
 C_OBJECTS = $(patsubst $(SOURCE)%.c,$(BUILD)%.o,$(wildcard $(SOURCE)*.c))
 
 # Rule to make everything.
-all : $(TARGET)
+all : $(TARGET) loader
 	
 # Rule to make the elf file.
 $(TARGET): $(ASM_OBJECTS) $(C_OBJECTS) kernel.ld
