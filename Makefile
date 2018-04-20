@@ -3,7 +3,7 @@ UNAME := $(shell uname -m)
 ifeq ($(UNAME), x86_64)
 	# set FVP as default on x86_64 systems	
 	hw?=rpi2
-	TOOLCHAIN?=~/gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-
+	TOOLCHAIN?=arm-none-eabi-
 else
 	# RPI reports 'uname -m' as: armv7l
 	hw?=rpi2
