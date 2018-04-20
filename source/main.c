@@ -100,7 +100,7 @@ cprintf("it is ok after fileinit\n");
 cprintf("it is ok after iinit\n");
   ideinit();
 cprintf("it is ok after ideinit\n");
-  kinit2(P2V((8*1024*1024)+PHYSTART), P2V(pm_size));
+  kinit2(P2V((8*1024*1024)+PHYSTART), P2V((40*1024*1024)+PHYSTART));
 cprintf("it is ok after kinit2\n");
   userinit();
 cprintf("it is ok after userinit\n");
